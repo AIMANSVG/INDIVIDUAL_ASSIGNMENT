@@ -1,0 +1,205 @@
+<html>
+<head>
+<title>My Home</title>
+</head>
+<body>
+<div class="bg"></div>
+<table width ="95%" border = "0" align="center">
+<tr>
+<td bgcolor="#d6ca94">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+background-image: url("background/moment.jpg");
+height: 40%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+</style>
+<div class="bg"></div>
+<body table background="background/white.jpg" width="50%" height="50%">
+<table width ="95%" border = "0" align="center">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #9a9c78;
+}
+
+.topnav a {
+  float: left;
+  color: #641E16;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<b><a href="index.html">Home</a></b>
+<b><a href="biodata.html">Biodata</a></b>
+<b><a href="family.html">Family</a></b>
+<b><a href="education.html">Education</a></b>
+<b><a href="friends.html">Friends</a></b>
+<b><a href="favfood_place.html">Fav Food and Place</a></b>
+<b><a href="gallery.html">Gallery</a></b>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+
+.column img {
+  opacity: 0.9; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.container {
+  position: relative;
+  display: none;
+}
+
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+<font color="maroon" font face="times new roman"</font>
+  <h1><i>MY MEMORIES</h1></i>
+</font>
+  <p>Click on the images below for a caption</p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="images/fam.jpg" alt="My Happy Family" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/smk1.jpg" alt="My Boys" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/smk2.jpg" alt="Me and Classmate" style="width:100%" onclick="myFunction(this);">
+  </div>
+ <div class="column">
+    <img src="images/smk3.jpg" alt="Me when Art Assignment" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/smk4.jpg" alt="Me at Class" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/smk5.jpg" alt="Me at School" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/smk6.jpg" alt="My crazy Classmate" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="images/smk7.jpg" alt="My Classmate" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="images/smk8.jpg" alt="My Bestfriend" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="images/smk9.jpg" alt="My Backbone" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="images/smk10.jpg" alt="My Classmate" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="images/smk11.jpg" alt="My Bestfriend" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="images/smk12.jpg" alt="Me when SPM Result" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="images/smk13.jpg" alt="Last Day at School" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="images/favb.jpg" alt="Fav Book" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="images/scene.jpg" alt="Beach" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="column">
+    <img src="images/uni1.jpg" alt="UiTM" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<embed src="video/smk.MOV" autoplay="true"></embed>
+<br><br>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:60%">
+  <div id="imgtext"></div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+</style>
+</head>
+</body>
+</html>
